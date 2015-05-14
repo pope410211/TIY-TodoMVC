@@ -21,15 +21,12 @@ debugger;
 		// WHEN the user types a task AND presses the "ENTER" key
 
 		// newTodoInput.addEventListener('keyup', function(){ console.log(arguments);})
-		newTodoInput.addEventListener('keyup', function addTodoControlle(){
+		newTodoInput.addEventListener('keyup', function addTodoController(){
 				if (event.keyCode === 13){// AND presses the "ENTER" key
 
 				var task = document.querySelector('input.new-todo').value;
-				function addTaskToList(task, list){
-					return list.push(task)
-				}
-
-					console.log(task)
+				todos.taskList.push(task);
+					console.log(todos.taskList);
 
 					// THEN:
 					// TODO  Save the thing to remember (task) to the list of things to remember(taskList)
