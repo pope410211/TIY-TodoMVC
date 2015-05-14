@@ -1,5 +1,13 @@
+var expect = require('chai'
+);
+
+
+(function(window) {
+
+var taskList = [];
+
 // using a JS package called chai  comes from installing via npm
-var expect = require('chai').expect;
+
 // Other ways to write above code
 //  var chai = require('chai");
 //  expect = chai.expect;
@@ -40,3 +48,19 @@ function orderTask(list, task){
 }
 
 expect(orderTask[1]).to.equal(0);
+
+    console.log(list);
+
+    addTaskToList("Remember the milk", list);
+
+    console.log(list);
+    // var element = document.querySelector('li');
+
+
+// Write a dictionary using Object Literal Syntax (makes a dictionary and object)
+    window.todos = {
+      "addTaskToList": addTaskToList,
+      "completeTask": completeTask,
+      "deleteTask": deleteTask
+    };
+})(window);
