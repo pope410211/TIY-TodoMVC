@@ -21,10 +21,13 @@ debugger;
 		// WHEN the user types a task AND presses the "ENTER" key
 
 		// newTodoInput.addEventListener('keyup', function(){ console.log(arguments);})
-		newTodoInput.addEventListener('keyup', function addTodoController(){
+		newTodoInput.addEventListener('keyup', function addTodoControlle(){
 				if (event.keyCode === 13){// AND presses the "ENTER" key
 
 				var task = document.querySelector('input.new-todo').value;
+				function addTaskToList(task, list){
+					return list.push(task)
+				}
 
 					console.log(task)
 
