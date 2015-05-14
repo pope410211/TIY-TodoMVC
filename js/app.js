@@ -1,6 +1,6 @@
 (function (window) {
 	'use strict'; // For bonus points what does this do?
-debugger;
+// debugger;
 
 
 
@@ -21,15 +21,17 @@ debugger;
 		// WHEN the user types a task AND presses the "ENTER" key
 
 		// newTodoInput.addEventListener('keyup', function(){ console.log(arguments);})
-		newTodoInput.addEventListener('keyup', function addTodoController(){
+		newTodoInput.addEventListener('keyup', function addTodoController(event){
 				if (event.keyCode === 13){// AND presses the "ENTER" key
 
 				var task = document.querySelector('input.new-todo').value;
 				todos.taskList.push(task);
+						document.querySelector('input.new-todo').value= "";
+				
 					console.log(todos.taskList);
 
 					// THEN:
-					// TODO  Save the thing to remember (task) to the list of things to remember(taskList)
+					// DONE  Save the thing to remember (task) to the list of things to remember(taskList)
 					// TODO  Remove the things to remember(task) from the "what needs to be done?"box(input new todo)
 					// TODO  Update the number of tasks in the footer...
 					// TODO  Add a new task(ul.todo-list > li) to the list of tasks in the display (ul.todo-list)
