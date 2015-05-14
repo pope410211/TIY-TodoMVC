@@ -41,12 +41,10 @@ debugger;
 	// lookMaArguments('hello', 'clarise');
 	// var element = document.querySelector('li');
 
-
-
 /**		_.forEach(element, function(element, index, elements){
 		    element.addEventListener('click', function(){
 		        element.childElement.classList.toggle('checkbox');
 		    });
 			});*/
 
-})(window);//
+})(window);
