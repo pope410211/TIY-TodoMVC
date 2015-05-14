@@ -23,7 +23,11 @@ debugger;
 		// newTodoInput.addEventListener('keyup', function(){ console.log(arguments);})
 		newTodoInput.addEventListener('keyup', function addTodoController(){
 				if (event.keyCode === 13){// AND presses the "ENTER" key
-					console.log('sanity check')
+
+				var task = document.querySelector('input.new-todo').value;
+
+					console.log(task)
+
 					// THEN:
 					// TODO  Save the thing to remember (task) to the list of things to remember(taskList)
 					// TODO  Remove the things to remember(task) from the "what needs to be done?"box(input new todo)
