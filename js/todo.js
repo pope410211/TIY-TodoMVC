@@ -19,3 +19,8 @@
       "deleteTask": deleteTask
     };
 })(window);
+
+
+
+
+// Code forked from @jessyriordan in group. (could not find Syntax error).
