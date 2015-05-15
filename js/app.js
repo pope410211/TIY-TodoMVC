@@ -55,6 +55,13 @@
 					console.log("Hello Clarise");
 				})
 
+					var deleteTaskButton = document.querySelector('button.destroy');
+
+					deleteTaskButton.addEventListener('click', function() {
+
+						console.log("I'm Sorry Dave, I cannot allow you to do that.");
+				})
+
 
 
 	}); // END addEventListner (addTodoController)
