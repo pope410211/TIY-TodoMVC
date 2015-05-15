@@ -51,20 +51,46 @@
 				var deleteTask = document.querySelector('ul.todo-list');
 
 				deleteTask.addEventListener('mouseover', function() {
-
 					console.log("Hello Clarise");
 				})
 
-					var deleteTaskButton = document.querySelector('button.destroy');
+					var deleteTaskButtons = document.querySelectorAll('button.destroy');
 
-					deleteTaskButton.addEventListener('click', function() {
+					_.forEach(deleteTaskButtons, function(element, index, deleteTaskButtons){
+						element.addEventListener('click', function(){
+							console.log("I'm Sorry Dave, I cannot allow you to do that.");
+						});
+					});
 
-						console.log("I'm Sorry Dave, I cannot allow you to do that.");
-				})
+					var editTask = document.querySelectorAll('li');
+
+					// editTask.addEventListener('dblclick', function() {
+
+					_.forEach(editTask, function(element, index, editTask){
+						element.addEventListener('dblclick', function(){
+							console.log("Click me one more time")
+						})
+					})
+
+					// });
+					// deleteTaskButton.addEventListener('click', function() {
+
+
+	});
+
+	var checkBox = document.querySelectorAll('input.toggle');
+
+	// editTask.addEventListener('dblclick', function() {
+
+	_.forEach(checkBox, function(element, index, editTask){
+		element.addEventListener('click', function(){
+			console.log("Check Mate")
+		})
+	})
 
 
 
-	}); // END addEventListner (addTodoController)
+	// END addEventListner (addTodoController)
 
 // function lookMaArguments(){ console.log(arguments);}
 	// lookMaArguments();
