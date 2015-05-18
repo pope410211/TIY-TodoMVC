@@ -1,7 +1,7 @@
 (function(window) {
   'use strict';
 
-window.alert('I Broke Something')
+window.alert('I Broke Something. I get unearned waffles, waffles of shame.')
   var newTodoInput = document.querySelector('input.new-todo');
 
   newTodoInput.addEventListener('keyup', function addTodoController(event) {
