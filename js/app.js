@@ -1,6 +1,7 @@
 (function(window) {
   'use strict';
 
+window.alert('I Broke Something')
   var newTodoInput = document.querySelector('input.new-todo');
 
   newTodoInput.addEventListener('keyup', function addTodoController(event) {
@@ -19,8 +20,7 @@
 
 
     document.querySelector('ul.todo-list').innerHTML += (
-      "<li><div><input class= 'toggle' type= 'checkbox'><label>" + task + "
-      </label><button class= 'destroy'></input></div></li>"
+      "<li><div><input class= 'toggle' type= 'checkbox'><label>" + task + "</label><button class= 'destroy'></input></div></li>"
     )
 
     console.log(todos.taskList);
