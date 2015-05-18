@@ -17,10 +17,10 @@
     todos.footerCount(todoCount);
 
 
-    //todoCountElement.text = todoCountText;
 
     document.querySelector('ul.todo-list').innerHTML += (
-      "<li><div><input class= 'toggle' type= 'checkbox'><label>" + task + "</label><button class= 'destroy'></input></div></li>"
+      "<li><div><input class= 'toggle' type= 'checkbox'><label>" + task + "
+      </label><button class= 'destroy'></input></div></li>"
     )
 
     console.log(todos.taskList);
@@ -29,9 +29,6 @@
 
   var deleteTask = document.querySelector("ul.todo-list");
   var deleteTaskButton = document.querySelectorAll('button.destroy');
-  // deleteTask.addEventListener('mouseover', function delteTaskController(event){
-  // 	console.log("hello");
-  // });
 
   _.forEach(deleteTaskButton, function(element, index, deleteTaskButton) {
     element.addEventListener('click', function() {
