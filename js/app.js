@@ -32,14 +32,14 @@
 
   _.forEach(deleteTaskButton, function(element, index, deleteTaskButton) {
     element.addEventListener('click', function() {
-      console.log("delete works");
+      console.log("I am sorry Dave, I cannot allow you to delete that.");
     });
   });
 
   var editTask = document.querySelectorAll("li");
   _.forEach(editTask, function(element, index, editTask) {
     element.addEventListener("dblclick", function() {
-      console.log("i can edit");
+      console.log("Roll for stats!");
     });
   });
 
